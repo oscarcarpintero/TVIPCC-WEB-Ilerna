@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+html {
+  font-family: "Roboto", sans-serif;
+}
+body {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  background: rgb(0, 188, 199);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 188, 199, 0.8382703423166141) 3%,
+    rgba(29, 115, 249, 1) 100%
+  );
+  font-weight: bold;
+  color: #f2f2f2;
+  position: fixed;
+  z-index: 99;
+}
+
+.logo {
+  width: 175px;
+  margin: 2px;
+  padding-left: 10px;
+  object-fit: contain;
+}
+
+.title {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-size: xx-large;
+}
+
+.hero {
+  max-width: 100%;
+  height: auto;
+}
+
+.title > h1 {
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  transform: translate(-30%, -30%);
+}
+
+h2 {
+  font-size: xx -large;
+  margin: 10px;
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: stretch;
+  list-style-type: none;
+  width: 100%;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  color: #f2f2f2;
+  opacity: 0.8;
+}
+
+li a:focus {
+  color: white;
+}
+
+article {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+article > p {
+  width: 45%;
+  line-height: 1.8;
+  font-size: large;
+  padding: 10px;
+}
+
+section > header {
+  padding-left: 15px;
+}
+.about > article > img {
+  width: 45%;
+  margin: 15px;
+  object-fit: contain;
+}
+
+.services > article > img {
+  width: 45%;
+  margin: 15px;
+  object-fit: contain;
+}
+
+.contact > article > img {
+  width: 45%;
+  margin: 15px 15px 15px 15px;
+  object-fit: contain;
+}
+
+form {
+  width: 50%;
+  line-height: 1.8;
+  font-size: large;
+  display: grid;
+  grid-template-columns: 0.2fr 1fr;
+  column-gap: 10px;
+  row-gap: 15px;
+  margin: auto;
+}
+
+form > p {
+  grid-column-start: span 2;
+}
+
+label {
+  text-align: right;
+}
+
+form > button {
+  grid-column-end: span 2;
+  justify-self: right;
+  width: 25%;
+  box-shadow: inset 0px -3px 7px 0px #29bbff;
+  background: linear-gradient(to bottom, #2dabf9 5%, #0688fa 100%);
+  background-color: #2dabf9;
+  border-radius: 3px;
+  border: 1px solid #0b0e07;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 15px;
+  padding: 9px 23px;
+  text-decoration: none;
+  text-shadow: 0px 1px 0px #263666;
+}
+
+form > button:hover {
+  background: linear-gradient(to bottom, #0688fa 5%, #2dabf9 100%);
+  background-color: #0688fa;
+}
+
+form > button:active {
+  position: relative;
+  top: 1px;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: space-evenly;
+  align-content: center;
+  text-align: center;
+  background-color: rgba(29, 115, 249, 1);
+}
+
+footer > div {
+  flex: 1;
+  padding: 5px;
+}
+
+h2:target {
+  padding-top: 100px;
+}
